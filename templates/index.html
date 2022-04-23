@@ -1,0 +1,13 @@
+{{ define "index" }}
+{{ template "header" }}
+<h2>this is index</h2>
+
+{{ range .articles }}
+    <a href="/article/{{ .Id }}">{{ .Name }}</a>
+    <p>{{ .Anons }}</p>
+{{ else }}
+    No articles
+{{ end }}
+
+{{ template "footer" }}
+{{ end }}

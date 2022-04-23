@@ -1,0 +1,11 @@
+{{ define "article" }}
+{{ template "header" }}
+
+<h2>{{ .article.Id }}: {{ .article.Name }}</h2>
+<h3>Anons</h3>
+<div>{{ .article.Anons }}</div>
+<h3>Content</h3>
+<div>{{ .article.Content }}</div>
+
+{{ template "footer" }}
+{{ end }}

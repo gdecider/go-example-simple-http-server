@@ -1,0 +1,10 @@
+{{ define "create" }}
+{{ template "header" }}
+<form action="/save_article" method="post">
+    <input type="text" name="name" placeholder="Tile"><br>
+    <textarea name="anons" placeholder="Anons"></textarea><br>
+    <textarea name="text" placeholder="Full text"></textarea><br>
+    <button type="submit">Save</button>
+</form>
+{{ template "footer" }}
+{{ end }}
